@@ -7,21 +7,16 @@
     <meta name="keywords" content="HTML5, CSS3, JavaScript, Bootstrap, JQuery, XHTML, XML, Node 0.10.x, server.js, AngularJS, Socket.IO">
     <meta name="description" content="Rich internet application that will display information about 5 of the programmes run at NCI">
     <meta name="author" content="Florin Ioan Taranu - Student ID: x14114640">
-    <meta http-equiv="refresh" content="30">
+    <meta http-equiv="refresh" content="3">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/css/style.css">
     <style>
       body {
         padding-top: 30px;
       }
-      .bgimage {
-        background-image: url('../../img/NCI1.jpg');
-        background-position: center center;
-        background-size: cover;
-        width: 865px;
-        height: 150px;
-      }
     </style>
+    
     <script>
       function ChatController($scope) {
         var socket = io.connect();
@@ -74,7 +69,7 @@
     
     <div class="container">
       
-      <div class="row">
+      <div class="row span9">
         
         <div class="100%">
           
@@ -82,10 +77,10 @@
             <section class="col-sm-8 col-sm-push-2">
               <article class="targetArticle">
                 <h2>Part Time Courses</h2>
-                <div class="row">
-                  <p class="col-sm-100%">
+                <p class="col-sm-100%">
                     At NCI we run a wide range of courses in the evening to facilitate your lifestyle.
                   </p>
+                <div class="row">
                 </div>
               </article>
             </section>
@@ -103,24 +98,24 @@
           <table class="table table-striped table-bordered">
             <thead>
               <tr>
-                <th class="span2">Name</th>
-                <th class="span7">Text</th>
+                <th class="span1">Name</th>
+                <th class="span2">Feedback</th>
               </tr>
             </thead>
             <tbody>
               <tr ng-repeat="msg in messages">
                 <td class="span2" ng-bind="msg.name"></td>
-                <td class="span7" ng-bind="msg.text"></td>
+                <td class="span4" ng-bind="msg.text"></td>
               </tr>
             </tbody>
           </table>
           <div class="row controls">
             <form ng-submit="send()">
-              <div class="span2">
+              <div class="span3">
                 <input type="text" class="input-block-level" ng-model="name" ng-change="setName()" placeholder="Your Name">
               </div>
               <div class="input-append span7">
-                <input type="text" class="span2" ng-model="text" placeholder="Message">
+                <input type="text" class="span4" ng-model="text" placeholder="Message">
                 <input type="submit" class="span2 btn btn-primary" value="Send" ng-disabled="!text">
               </div>
             </form>
