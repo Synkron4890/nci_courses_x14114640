@@ -1,16 +1,14 @@
 var http = require('http');
 var path = require('path');
-
+var bodyParser = require('body-parser');
+var fs = require('fs');
+var js2xmlparser = require("js2xmlparser");
+var xslt = require('node_xslt');
 var async = require('async');
 var socketio = require('socket.io');
 var express = require('express');
 
-//
-// ## SimpleServer `SimpleServer(obj)`
-//
-// Creates a new instance of SimpleServer with the following options:
-//  * `port` - The HTTP port to listen on. If `process.env.PORT` is set, _it overrides this value_.
-//
+
 var router = express();
 var server = http.createServer(router);
 var io = socketio.listen(server);
