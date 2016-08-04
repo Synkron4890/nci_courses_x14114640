@@ -7,15 +7,29 @@
     <meta name="keywords" content="HTML5, CSS3, JavaScript, Bootstrap, JQuery, XHTML, XML, Node 0.10.x, server.js, AngularJS, Socket.IO">
     <meta name="description" content="Rich internet application that will display information about 5 of the programmes run at NCI">
     <meta name="author" content="Florin Ioan Taranu - Student ID: x14114640">
-    <meta http-equiv="refresh" content="3">
+    <meta http-equiv="refresh" content="20">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
-    
     <style>
       body {
         padding-top: 30px;
       }
+      .jumbotron {
+       background-image: url('../img/NCI1.jpg');
+       background-attachment: fixed;
+       min-height: 500px;
+       margin-bottom: 0px;
+     }
+     .jumbotron2 {
+       background-image: url('../img/NCI1.jpg');
+       background-attachment: fixed;
+       min-height: 500px;
+       min-width: 100px;
+       margin-bottom: 0px;
+     }
     </style>
     
     <script>
@@ -60,6 +74,11 @@
     </script>
   </head>
   <body>
+    
+    <div class="jumbotron">
+      
+    </div>
+    
     <div class="navbar navbar-fixed-top navbar-inverse">
       <div class="navbar-inner">
         <div class="pull-right">
@@ -123,10 +142,19 @@
           </div>
         </div>
     </div>
-    
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/angular.min.js"></script>
+    
+    <div class="jumbotron2">
+      
+    </div>
+    
+    <footer class="container-fluid">
+        <h1 align='left'>NCI</h1>
+
+    </footer>
+    
   </body>
 </html>
