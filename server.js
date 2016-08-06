@@ -13,9 +13,25 @@ var router = express();
 var server = http.createServer(router);
 var io = socketio.listen(server);
 
+router.use(express.static(path.resolve(__dirname, 'public')));
+router.use(bodyParser.urlencoded({extended: true}));
+router.use(bodyParser.json());
+
 router.use(express.static(path.resolve(__dirname, 'client')));
 var messages = [];
 var sockets = [];
+
+//HTML Produced by XSL Transformation
+router.get('/PartTimeCourses.html', function(req, res){
+  
+  //Read XML and XSL files
+  var stylesheet=xslt.readXsltFile('PartTimeCourses.xsl');
+  var doc=xslt.readXmlFile('PartTimeCourses.xml');
+  //Transformation
+  var result=xslt.transform(stylesheet, doc, []);
+  //Creating the result
+  res.send(result);
+});
 
 io.on('connection', function (socket) {
     messages.forEach(function (data) {
