@@ -77,6 +77,16 @@
         });
       });
     </script>
+    <script type="text/javascript">
+      $(document).on("click", "button.closed a", function (){
+        $(this).parent().attr("class", "open");
+        $(this).text("Close");
+      });
+      $(document).on("click", "button.open a", function (){
+        $(this).parent().attr("class", "close");
+        $(this).text("View Our Courses");
+      });
+    </script>
   </head>
   <body>
     
@@ -104,11 +114,9 @@
                 <h2>Part Time Courses</h2>
                 <p class="col-sm-100%">
                     At NCI we run a wide range of courses in the evening to facilitate your lifestyle.
-                    <button id="PartTimeCourses">View Our Courses</button>
-                    <div id="targetPartTimeCourses"></div>
-                  </p>
-                <div class="row">
-                </div>
+                  <button id="PartTimeCourses" class="closed"><a href="#">View Our Courses</a></button>
+                  <div id="targetPartTimeCourses"></div>
+                </p>
               </article>
               <article>
                 <h2>Full Time Courses</h2>

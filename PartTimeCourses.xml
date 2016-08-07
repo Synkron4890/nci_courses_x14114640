@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<courses>
+<courses xmlns:xlink="http://www.w3.org/1999/xlink">
     <course>
-        <title>BA in Early Childhood Education</title>
+        <title><a href="https://www.ncirl.ie/Courses/Course-Details?course=BA-(Hons)-in-Early-Childhood-Education-BAHECE">BA in Early Education</a></title>
         <level>NFQ Honours Degree</level>
         <duration>4 years</duration>
-        <xlink:simple xmlns:xlink="http://www.w3.org/XML/XLink/0.9" href="https://www.ncirl.ie/Courses/Course-Details?course=BA-(Hons)-in-Early-Childhood-Education-BAHECE">
-                    Apply Here
-        </xlink:simple>
-
+        <apply>Apply Here</apply>
     </course>
 </courses>
+    

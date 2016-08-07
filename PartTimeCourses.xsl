@@ -23,7 +23,7 @@
 						<th>Title</th>
 						<th>Level</th>
 						<th>Duration</th>
-						<th href="https://www.ncirl.ie/Courses/Course-Details?course=BA-(Hons)-in-Early-Childhood-Education-BAHECE">Apply</th>
+						<th>Apply</th>
 					</tr>
 					<xsl:for-each select="courses/course">
 							<tr>
