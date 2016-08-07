@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<courses xmlns:xlink="http://www.w3.org/1999/xlink">
+    <course>
+        <title>Certificate in Digital Marketing</title>
+        <level>NFQ Certificate</level>
+        <duration>1 year</duration>
+        <details>
+             Students will graduate with strong skills in digital marketing strategy and implementation, as well as in-depth knowledge of the digital landscape and the latest digital tools and techniques.
+        </details>
+    </course>
+    <course>
+        <title>Diploma in Marketing Advertising, Public Relations and Sales</title>
+        <level>NFQ Diploma</level>
+        <duration>1 year</duration>
+        <details>
+            This Institute of Commercial Management Diploma will give you a comprehensive understanding of marketing, advertising, PR and sales management.
+        </details>
+    </course>
+    <course>
+        <title>BA in Business</title>
+        <level>NFQ Honours Degree</level>
+        <duration>3 years</duration>
+        <details>
+            You will cover all the key business disciplines and have the opportunity to specialise in particular areas of business as you progress through the course.
+        </details>
+    </course>
+    <course>
+        <title>BSc in Computing</title>
+        <level>NFQ Honours Degree</level>
+        <duration>4 years</duration>
+        <details>
+            The work of the computer engineer is visible in our smartphones, our business services, the internet and every aspect of our lives.
+        </details>
+    </course>
+</courses>
+    

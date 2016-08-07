@@ -1,10 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <courses xmlns:xlink="http://www.w3.org/1999/xlink">
     <course>
-        <title><a href="https://www.ncirl.ie/Courses/Course-Details?course=BA-(Hons)-in-Early-Childhood-Education-BAHECE">BA in Early Education</a></title>
+        <title xlink:href="https://www.ncirl.ie/Courses/Course-Details?course=BA-(Hons)-in-Early-Childhood-Education-BAHECE">BA in Early Education</title>
         <level>NFQ Honours Degree</level>
         <duration>4 years</duration>
-        <apply>Apply Here</apply>
+        <details>
+            The overall goal of the programme is the development of professional educators for the future, who specialise in early childhood education.
+        </details>
+    </course>
+    <course>
+        <title>Master of Business Administration</title>
+        <level>NFQ Masters</level>
+        <duration>2 years</duration>
+        <details>
+            The MBA course will provide you with a strong theoretical foundation in the broader disciplines of management as well as focusing on the practical application of theory in real-world settings and cases.
+        </details>
+    </course>
+    <course>
+        <title>MSc in Science Cloud Computing</title>
+        <level>NFQ Masters</level>
+        <duration>2 years</duration>
+        <details>
+            This course will provide you with the latest knowledge and competencies required by the fastest growing global industry: the cloud.
+        </details>
+    </course>
+    <course>
+        <title>Post Grad Diploma in Arts in HRM</title>
+        <level>NFQ Postgraduate Diploma</level>
+        <duration>1 year - over 3 consecutive semesters</duration>
+        <details>
+            Successful completion leads to Chartered Membership of the Chartered Institute of Personnel and Development (CIPD).
+        </details>
     </course>
 </courses>
     

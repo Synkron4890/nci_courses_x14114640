@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<courses xmlns:xlink="http://www.w3.org/1999/xlink">
+    <course>
+        <title>Human Resource Management - Part-time</title>
+        <level>NFQ Masters</level>
+        <duration>2 years</duration>
+        <details>
+             The programme aims to develop an in-depth understanding of the core disciplines in the area of human resources (HR).
+        </details>
+    </course>
+    <course>
+        <title>MA in Learning and Teaching</title>
+        <level>NFQ Masters</level>
+        <duration>1 year</duration>
+        <details>
+          This course is designed to meet the needs of learning and teaching professionals in adult and workplace education, and further and higher education contexts.
+        </details>
+    </course>
+    <course>
+        <title>Masters of Business Administration</title>
+        <level>NFQ Masters</level>
+        <duration>2 years</duration>
+        <details>
+            The MBA course will provide you with a strong theoretical foundation in the broader disciplines of management as well as focusing on the practical application of theory in real-world settings and cases.
+        </details>
+    </course>
+    <course>
+        <title>MSc in Cloud Computing</title>
+        <level>NFQ Masters</level>
+        <duration>1 year</duration>
+        <details>
+            This course will provide you with the latest knowledge and competencies required by the fastest growing global industry: the cloud.
+        </details>
+    </course>
+</courses>
+    

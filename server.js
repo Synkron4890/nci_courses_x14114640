@@ -8,15 +8,9 @@ var xslt = require('node_xslt');
 var async = require('async');
 var socketio = require('socket.io');
 
-
-
 var router = express();
 var server = http.createServer(router);
 var io = socketio.listen(server);
-
-// router.use(express.static(path.resolve(__dirname, 'client')));
-// router.use(bodyParser.urlencoded({extended: true}));
-// router.use(bodyParser.json());
 
 router.use(express.static(path.resolve(__dirname, 'client')));
 var messages = [];
@@ -28,6 +22,54 @@ router.get('/PartTimeCourses.html', function(req, res){
   //Read XML and XSL files
   var stylesheet=xslt.readXsltFile('PartTimeCourses.xsl');
   var doc=xslt.readXmlFile('PartTimeCourses.xml');
+  //Transformation
+  var result=xslt.transform(stylesheet, doc, []);
+  //Creating the result
+  res.send(result);
+});
+
+//HTML Produced by XSL Transformation
+router.get('/FullTimeCourses.html', function(req, res){
+  
+  //Read XML and XSL files
+  var stylesheet=xslt.readXsltFile('FullTimeCourses.xsl');
+  var doc=xslt.readXmlFile('FullTimeCourses.xml');
+  //Transformation
+  var result=xslt.transform(stylesheet, doc, []);
+  //Creating the result
+  res.send(result);
+});
+
+//HTML Produced by XSL Transformation
+router.get('/PostgraduateCourses.html', function(req, res){
+  
+  //Read XML and XSL files
+  var stylesheet=xslt.readXsltFile('PostgraduateCourses.xsl');
+  var doc=xslt.readXmlFile('PostgraduateCourses.xml');
+  //Transformation
+  var result=xslt.transform(stylesheet, doc, []);
+  //Creating the result
+  res.send(result);
+});
+
+//HTML Produced by XSL Transformation
+router.get('/UndergraduateCourses.html', function(req, res){
+  
+  //Read XML and XSL files
+  var stylesheet=xslt.readXsltFile('UndergraduateCourses.xsl');
+  var doc=xslt.readXmlFile('UndergraduateCourses.xml');
+  //Transformation
+  var result=xslt.transform(stylesheet, doc, []);
+  //Creating the result
+  res.send(result);
+});
+
+//HTML Produced by XSL Transformation
+router.get('/CaoCourses.html', function(req, res){
+  
+  //Read XML and XSL files
+  var stylesheet=xslt.readXsltFile('CaoCourses.xsl');
+  var doc=xslt.readXmlFile('CaoCourses.xml');
   //Transformation
   var result=xslt.transform(stylesheet, doc, []);
   //Creating the result

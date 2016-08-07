@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<courses xmlns:xlink="http://www.w3.org/1999/xlink">
+    <course>
+        <title>BA in Accounting and Finance</title>
+        <level>NFQ Honours Degree</level>
+        <duration>3 years</duration>
+        <details>
+            t will give you the technical skills you need but also the ability to think critically and creatively to understand how an organisation can succeed. 
+        </details>
+    </course>
+    <course>
+        <title>BA in Business</title>
+        <level>NFQ Honours Degree</level>
+        <duration>3 years</duration>
+        <details>
+            You will cover all the key business disciplines and have the opportunity to specialise in particular areas of business as you progress through the course.
+        </details>
+    </course>
+    <course>
+        <title>BSc in Technology Management</title>
+        <level>NFQ Honours Degree</level>
+        <duration>4 years</duration>
+        <details>
+            The BSc (Hons) in Technology Management course is designed to enable students to develop and refine business, leadership, and managerial skills.
+        </details>
+    </course>
+    <course>
+        <title>BSc in Business Information Systems</title>
+        <level>NFQ Honours Degree</level>
+        <duration>4 years</duration>
+        <details>
+            This degree gives you the skills to develop technology- based solutions for all types of organisations.
+        </details>
+    </course>
+</courses>
+    

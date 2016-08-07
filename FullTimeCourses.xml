@@ -1,31 +1,36 @@
-<?xml version="1.0"?>
-
-<?xml-stylesheet type="text/xsl" href="shops.xsl"?>
-    <main>
-        <listing>
-            <category>
-                Auto Dealers
-            </category>
-            <company>
-                <name>E-Z Credit Motors</name>
-                <address>19465 Sumpter Rd. Belleville, MI 48111</address>
-                <phone>(734) 697-2682</phone>
-
-                <xlink:simple xmlns:xlink="http://www.w3.org/XML/XLink/0.9" href="mailto:joe@joeinternet.net">
-                    <email>joe</email>
-                </xlink:simple>
-                <webadd>click here</webadd>
-            </company>
-            <company>
-                <name>Gib's Auto Sales</name>
-                <address>49412 Michigan Ave. Belleville, MI 48111</address>
-                <phone>(734) 432-9666</phone>
-                <webadd1>gib</webadd1>
-            </company>
-            <company>
-                <name>Atchinson Ford Sales Inc</name>
-                <address>9800 Belleville Rd. Belleville, MI 48111</address>
-                <phone>(734) 697-9161</phone>
-            </company>
-        </listing>
-    </main>
+<?xml version="1.0" encoding="UTF-8"?>
+<courses xmlns:xlink="http://www.w3.org/1999/xlink">
+    <course>
+        <title>BA in Psychology</title>
+        <level>NFQ Honours Degree</level>
+        <duration>3 years</duration>
+        <details>
+             The psychology degree at NCI will set you on an amazing journey of discovery. It will also equip you for a range of careers.
+        </details>
+    </course>
+    <course>
+        <title>Science in Computing Applications and Business Support</title>
+        <level>NFQ Higher Certificate</level>
+        <duration>2 years</duration>
+        <details>
+            NCI’s Higher Certificate in Computing is an ideal starting point to your studies as it offers a clear path into the computing degrees at National College of Ireland and other institutions.
+        </details>
+    </course>
+    <course>
+        <title>Data Analytics</title>
+        <level>NFQ MAsters</level>
+        <duration>1 year</duration>
+        <details>
+            This computing course aims to produce high-quality, technically competent, innovative graduates that will become leading practitioners in the field of data analytics.
+        </details>
+    </course>
+    <course>
+        <title>Marketing</title>
+        <level>NFQ Masters</level>
+        <duration>1 year</duration>
+        <details>
+            The course will equip you with a comprehensive understanding of key foundations of the marketing discipline as well as providing you with a detailed understanding of the contemporary marketplace.
+        </details>
+    </course>
+</courses>
+    

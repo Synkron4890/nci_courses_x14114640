@@ -23,7 +23,7 @@
 						<th>Title</th>
 						<th>Level</th>
 						<th>Duration</th>
-						<th>Apply</th>
+						<th>Details</th>
 					</tr>
 					<xsl:for-each select="courses/course">
 							<tr>
@@ -37,7 +37,7 @@
 									<xsl:value-of select="duration"/>
 								</td>
 								<td>
-									<xsl:value-of select="apply"/>
+									<xsl:value-of select="details"/>
 								</td>
 							</tr>
 					</xsl:for-each>
