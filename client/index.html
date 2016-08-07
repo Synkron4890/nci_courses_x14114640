@@ -90,25 +90,21 @@
       });
     </script>
   </head>
+  
   <body>
-    
-    <div class="jumbotron">
-    </div>
+    <div class="jumbotron"></div>
     
     <div class="navbar navbar-fixed-top navbar-inverse">
       <div class="navbar-inner">
-        <div class="pull-left">
+        <div class="span8">
           <a href="https://www.ncirl.ie/"><img src="img/national_college_of_ireland80.png"/></a>
         </div>
       </div>
     </div>
     
     <div class="container">
-      
       <div class="row span9">
-        
         <div class="100%">
-          
           <div class="row row-sm-height">
             <section class="col-sm-8 col-sm-push-2">
               <article class="targetArticle">
@@ -158,13 +154,11 @@
               </article>
             </section>
           </div>
-          
           <ul class="nav nav-list well">
             <li class="nav-header">Local Users</li>
             <li ng-repeat="user in roster" ng-bind="user">
             </li>
           </ul>
-          
         </div>
       </div>
       <div class="span9">
@@ -195,19 +189,23 @@
           </div>
         </div>
     </div>
+    
+    <div class="navbar navbar-fixed-bottom navbar-inverse">
+      <div class="navbar-inner">
+        <div class="pull-left"></div>
+      </div>
+    </div>
+    
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/angular.min.js"></script>
     
-    <div class="jumbotron2">
-      
-    </div>
+    <div class="jumbotron2"></div>
     
-    <footer class="container-fluid">
-        <h1 align='left'>NCI</h1>
-
-    </footer>
+    <!--<footer class="container-fluid">-->
+    <!--    <h1 align='left'>NCI</h1>-->
+    <!--</footer>-->
     
   </body>
 </html>
