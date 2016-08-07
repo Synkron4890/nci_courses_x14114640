@@ -4,6 +4,9 @@
         <title>BA in Early Childhood Education</title>
         <level>NFQ Honours Degree</level>
         <duration>4 years</duration>
-        <apply href="https://www.ncirl.ie/Courses/Course-Details?course=BA-(Hons)-in-Early-Childhood-Education-BAHECE">Apply Here</apply>
+        <xlink:simple xmlns:xlink="http://www.w3.org/XML/XLink/0.9" href="https://www.ncirl.ie/Courses/Course-Details?course=BA-(Hons)-in-Early-Childhood-Education-BAHECE">
+                    Apply Here
+        </xlink:simple>
+
     </course>
 </courses>
