@@ -1,5 +1,10 @@
 {
     "enquiry": [
-        
+        {
+            "name": "Florin",
+            "email": "florin.it4890@gmail.com",
+            "comment": "I would like a brochure"
+        },
+        null
     ]
 }

@@ -105,7 +105,7 @@ router.post('/post/json', function(req, res) {
     // Parse the JSON file in order to be able to edit it 
     var JSONparsed = JSON.parse(JSONfile);
     // Add a new record into the array within the JSON file    
-    JSONparsed.order.push(obj);
+    JSONparsed.enquiry.push(obj);
     // Beautify the resulting JSON file
     var JSONformated = JSON.stringify(JSONparsed, null, 4);
     // Write the updated JSON file back to the system 

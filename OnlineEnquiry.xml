@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <enquiries>
 	<enquiry>
-		<name>Jason</name>
-		<email>jason.jameson@jamie.com</email>
-		<enquiry>I would like to know more information about accreditations please</enquiry>
+		<name>Florin</name>
+		<email>florin.it4890@gmail.com</email>
+		<comment>I would like a brochure</comment>
 	</enquiry>
-	<enquiry>
-		<name>Michael</name>
-		<email>michaelcarpenter@email.com</email>
-		<enquiry>Can I get a pricing list for each individual course please?</enquiry>
-	</enquiry>
+	<enquiry></enquiry>
 </enquiries>

@@ -22,7 +22,7 @@
 					<tr>
 						<th>Name</th>
 						<th>E-Mail</th>
-						<th>Enquiry</th>
+						<th>Comment</th>
 					</tr>
 					<xsl:for-each select="enquiries/enquiry">
 							<tr>
@@ -33,7 +33,7 @@
 									<xsl:value-of select="email"/>
 								</td>
 								<td>
-									<xsl:value-of select="enquiry"/>
+									<xsl:value-of select="comment"/>
 								</td>								
 							</tr>
 					</xsl:for-each>
