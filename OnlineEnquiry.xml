@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<enquiries>
-	<enquiry>
-		<name>Florin</name>
-		<email>florin.it4890@gmail.com</email>
-		<comment>I would like a brochure</comment>
-	</enquiry>
+<enquiry>
 	<enquiry></enquiry>
-</enquiries>
+	<enquiry></enquiry>
+</enquiry>

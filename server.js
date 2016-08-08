@@ -18,7 +18,7 @@ var sockets = [];
 
 // GET request to send back JSON file
 router.get('/get/json', function(req, res) {
-  res.setHeader('Content-Type', 'application/json');
+  res.setHeader('Content-Name', 'application/json');
   var obj = JSON.parse(fs.readFileSync('OnlineEnquiry.json', 'utf8'));
   console.log("test");
   res.end(JSON.stringify(obj));
@@ -111,7 +111,7 @@ router.post('/post/json', function(req, res) {
     // Write the updated JSON file back to the system 
     fs.writeFileSync('OnlineEnquiry.json', JSONformated);
     // Convert the updated JSON file to XML     
-    var XMLformated = js2xmlparser("enquiries", JSONformated);
+    var XMLformated = js2xmlparser("enquiry", JSONformated);
     // Write the resulting XML back to the system
     fs.writeFileSync('OnlineEnquiry.xml', XMLformated);
   }
