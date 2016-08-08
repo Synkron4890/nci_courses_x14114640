@@ -15,9 +15,12 @@
   },
   "repository": "",
   "author": "Florin Ioan Taranu - Student ID: x14114640",
+  "type": "git",
+  "url": "git+https://github.com/Synkron4890/nci_courses_x14114640"
   "dependencies": {
     "async": "~0.2.8",
     "express": "~3.2.4",
     "socket.io": "~0.9.14"
   }
+  "homepage": "https://github.com/Synkron4890/nci_courses_x14114640#readme"
 }
