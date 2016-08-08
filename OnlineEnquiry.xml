@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <enquiries>
 	<enquiry>
-		<name></name>
-		<email></email>
-		<comment></comment>
+		<name>Florin</name>
+		<email>florin.it4890@gmail.com</email>
+		<comment>I would like a pricing list please</comment>
+	</enquiry>
+	<enquiry>
+		<name>John</name>
+		<email>john.doe@email.com</email>
+		<comment>I would like a brochure please</comment>
+	</enquiry>
+	<enquiry>
+		<name>Michael</name>
+		<email>michael@email.com</email>
+		<comment>I would like to know the accreditations of your courses</comment>
 	</enquiry>
 	<enquiry></enquiry>
 	<enquiry></enquiry>
 	<enquiry></enquiry>
 	<enquiry></enquiry>
 	<enquiry></enquiry>
+	<enquiry></enquiry>
+	<enquiry>
+		<Name>few</Name>
+		<Email>qww</Email>
+		<Enquiry>qww</Enquiry>
+	</enquiry>
+	<enquiry>
+		<Name>d</Name>
+		<Email>ferfe</Email>
+		<Enquiry>f</Enquiry>
+	</enquiry>
 </enquiries>

@@ -1,14 +1,35 @@
 {
     "enquiry": [
         {
-            "name": "",
-            "email": "",
-            "comment": ""
+            "name": "Florin",
+            "email": "florin.it4890@gmail.com",
+            "comment": "I would like a pricing list please"
+        },
+        {
+            "name": "John",
+            "email": "john.doe@email.com",
+            "comment": "I would like a brochure please"
+        },
+        {
+            "name": "Michael",
+            "email": "michael@email.com",
+            "comment": "I would like to know the accreditations of your courses"
         },
         null,
         null,
         null,
         null,
-        null
+        null,
+        null,
+        {
+            "Name": "few",
+            "Email": "qww",
+            "Enquiry": "qww"
+        },
+        {
+            "Name": "d",
+            "Email": "ferfe",
+            "Enquiry": "f"
+        }
     ]
 }
