@@ -16,6 +16,14 @@ router.use(express.static(path.resolve(__dirname, 'client')));
 var messages = [];
 var sockets = [];
 
+// GET request to send back JSON file
+router.get('/get/json', function(req, res) {
+  res.setHeader('Content-Type', 'application/json');
+  var obj = JSON.parse(fs.readFileSync('OnlineEnquiry.json', 'utf8'));
+  console.log("test");
+  res.end(JSON.stringify(obj));
+});
+
 //HTML Produced by XSL Transformation
 router.get('/PartTimeCourses.html', function(req, res){
   
@@ -75,6 +83,47 @@ router.get('/CaoCourses.html', function(req, res){
   //Creating the result
   res.send(result);
 });
+
+//HTML Produced by XSL Transformation
+router.get('/OnlineEnquiry.html', function(req, res){
+  
+  //Read XML and XSL files
+  var stylesheet=xslt.readXsltFile('OnlineEnquiry.xsl');
+  var doc=xslt.readXmlFile('OnlineEnquiry.xml');
+  //Transformation
+  var result=xslt.transform(stylesheet, doc, []);
+  //Creating the result
+  res.send(result);
+});
+
+// POST request to add to JSON & XML files
+router.post('/post/json', function(req, res) {
+  // Function to read in a JSON file, add to it & convert to XML
+  function appendJSON(obj) {
+    // Read in a JSON file
+    var JSONfile = fs.readFileSync('OnlineEnquiry.json', 'utf8');
+    // Parse the JSON file in order to be able to edit it 
+    var JSONparsed = JSON.parse(JSONfile);
+    // Add a new record into the array within the JSON file    
+    JSONparsed.order.push(obj);
+    // Beautify the resulting JSON file
+    var JSONformated = JSON.stringify(JSONparsed, null, 4);
+    // Write the updated JSON file back to the system 
+    fs.writeFileSync('OnlineEnquiry.json', JSONformated);
+    // Convert the updated JSON file to XML     
+    var XMLformated = js2xmlparser("enquiries", JSONformated);
+    // Write the resulting XML back to the system
+    fs.writeFileSync('OnlineEnquiry.xml', XMLformated);
+  }
+  // Call appendJSON function and pass in body of the current POST request
+  appendJSON(req.body);
+  // Re-direct the browser back to the page, where the POST request came from
+  res.redirect('back');
+});
+
+
+
+
 
 io.on('connection', function (socket) {
     messages.forEach(function (data) {
