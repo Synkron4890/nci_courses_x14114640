@@ -8,7 +8,7 @@
     <meta name="keywords" content="HTML5, CSS3, JavaScript, Bootstrap, JQuery, XHTML, XML, Node 0.10.x, server.js, AngularJS, Socket.IO">
     <meta name="description" content="Rich internet application that will display information about 5 of the programmes run at NCI">
     <meta name="author" content="Florin Ioan Taranu - Student ID: x14114640">
-    <meta http-equiv="refresh" content="60">
+    <meta http-equiv="refresh" content="480">
     
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -32,6 +32,11 @@
        min-height: 500px;
        min-width: 100px;
        margin-bottom: 0px;
+     }
+     .container {
+       background-color: white;
+       width: 1000px;
+       border-radius: 20px; 
      }
     </style>
     
@@ -92,102 +97,110 @@
   </head>
   
   <body>
-    <div class="jumbotron"></div>
-    
-    <div class="navbar navbar-fixed-top navbar-inverse">
-      <div class="navbar-inner">
-        <div class="span8">
-          <a href="https://www.ncirl.ie/"><img src="img/national_college_of_ireland80.png"/></a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="container">
-      <div class="row span9">
-        <div class="100%">
-          <div class="row row-sm-height">
-            <section class="col-sm-8 col-sm-push-2">
-              <article class="targetArticle">
-                <h2>Part Time Courses</h2>
-                <p class="col-sm-100%">
-                    At NCI we run a wide range of courses in the evening to facilitate your lifestyle.
-                  <button id="PartTimeCourses">View Our Courses</button>
-                  <div id="targetPartTimeCourses"></div>
-                </p>
-              </article>
-              <article>
-                <h2>Full Time Courses</h2>
-                <p class="col-sm-100%">
-                  NCI have a variety of full-time courses ranging from certificate to degree level.
-                  <button id="FullTimeCourses">View Our Courses</button>
-                  <div id="targetFullTimeCourses"></div>
-                </p>
-              </article>
-              <article>
-                <h2>Postgraduate Courses</h2>
-                <p class="col-sm-100%">
-                  At NCI we have a variety of postgraduate courses in the areas of computing, business and psychology.
-                  <button id="PostgraduateCourses">View Our Courses</button>
-                  <div id="targetPostgraduateCourses"></div>
-                </p>
-              </article>
-              <article>
-                <h2>Undergraduate Courses</h2>
-                <p class="col-sm-100%">
-                  At NCI we have a wide range of courses that will help you further your career both part-time and full-time.
-                  <button id="UndergraduateCourses">View Our Courses</button>
-                  <div id="targetUndergraduateCourses"></div>
-                </p>
-              </article>
-              <article>
-                <h2>CAO Courses</h2>
-                <p class="col-sm-100%">
-                  NCI have a wide range of undergraduate courses that will help you to realise your potential.
-                  <button id="CaoCourses">View Our Courses</button>
-                  <div id="targetCaoCourses"></div>
-                </p>
-              </article>
-            </section>
-            <section>
-              <article>
-                
-              </article>
-            </section>
-          </div>
-          <ul class="nav nav-list well">
-            <li class="nav-header">Local Users</li>
-            <li ng-repeat="user in roster" ng-bind="user">
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="span9">
-          <table class="table table-striped table-bordered">
-            <thead>
-              <tr>
-                <th class="span1">Name</th>
-                <th class="span2">Feedback</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr ng-repeat="msg in messages">
-                <td class="span2" ng-bind="msg.name"></td>
-                <td class="span4" ng-bind="msg.text"></td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="row controls">
-            <form ng-submit="send()">
-              <div class="span2">
-                <input type="text" class="input-block-level" ng-model="name" ng-change="setName()" placeholder="Your Name">
-              </div>
-              <div class="input-append span8">
-                <input type="text" class="span4" ng-model="text" placeholder="Message">
-                <input type="submit" class="span2 btn btn-primary" value="Send" ng-disabled="!text">
-              </div>
-            </form>
+    <div class="jumbotron">
+      </br>
+      </br>
+      </br>
+      <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-inner">
+          <div class="span8">
+            <a href="https://www.ncirl.ie/"><img src="img/national_college_of_ireland80.png"/></a>
           </div>
         </div>
+      </div>
+    
+      <div class="container" id="wrapper">
+        <div class="row span9">
+          <div class="100%">
+            <div class="row row-sm-height">
+              <section class="col-sm-8 col-sm-push-2">
+                <article class="targetArticle">
+                  <h2>Part Time Courses</h2>
+                  <p class="col-sm-100%">
+                      At NCI we run a wide range of courses in the evening to facilitate your lifestyle.
+                    <div id="targetPartTimeCourses">
+                      <button id="PartTimeCourses">View Our Courses</button>
+                    </div>
+                  </p>
+                </article>
+                <article>
+                  <h2>Full Time Courses</h2>
+                  <p class="col-sm-100%">
+                    NCI have a variety of full-time courses ranging from certificate to degree level.
+                    <div id="targetFullTimeCourses">
+                      <button id="FullTimeCourses">View Our Courses</button>
+                    </div>
+                  </p>
+                </article>
+                <article>
+                  <h2>Postgraduate Courses</h2>
+                  <p class="col-sm-100%">
+                    At NCI we have a variety of postgraduate courses in the areas of computing, business and psychology.
+                    <div id="targetPostgraduateCourses">
+                      <button id="PostgraduateCourses">View Our Courses</button>
+                    </div>
+                  </p>
+                </article>
+                <article>
+                  <h2>Undergraduate Courses</h2>
+                  <p class="col-sm-100%">
+                    At NCI we have a wide range of courses that will help you further your career both part-time and full-time.
+                    <div id="targetUndergraduateCourses">
+                      <button id="UndergraduateCourses">View Our Courses</button>
+                    </div>
+                  </p>
+                </article>
+                <article>
+                  <h2>CAO Courses</h2>
+                  <p class="col-sm-100%">
+                    NCI have a wide range of undergraduate courses that will help you to realise your potential.
+                    <div id="targetCaoCourses">
+                      <button id="CaoCourses">View Our Courses</button>
+                    </div>
+                  </p>
+                </article>
+              </section>
+              <section>
+                <article>
+                  
+                </article>
+              </section>
+            </div>
+            <ul class="nav nav-list well">
+              <li class="nav-header">Local Users</li>
+              <li ng-repeat="user in roster" ng-bind="user">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="span9">
+            <table class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th class="span1">Name</th>
+                  <th class="span2">Feedback</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="msg in messages">
+                  <td class="span2" ng-bind="msg.name"></td>
+                  <td class="span4" ng-bind="msg.text"></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="row controls">
+              <form ng-submit="send()">
+                <div class="span2">
+                  <input type="text" class="input-block-level" ng-model="name" ng-change="setName()" placeholder="Your Name">
+                </div>
+                <div class="input-append span8">
+                  <input type="text" class="span4" ng-model="text" placeholder="Message">
+                  <input type="submit" class="span2 btn btn-primary" value="Send" ng-disabled="!text">
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
     </div>
     
     <div class="navbar navbar-fixed-bottom navbar-inverse">
@@ -202,10 +215,6 @@
     <script src="/js/angular.min.js"></script>
     
     <div class="jumbotron2"></div>
-    
-    <!--<footer class="container-fluid">-->
-    <!--    <h1 align='left'>NCI</h1>-->
-    <!--</footer>-->
     
   </body>
 </html>
