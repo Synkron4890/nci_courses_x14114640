@@ -15,21 +15,15 @@
             "email": "michael@email.com",
             "comment": "I would like to know the accreditations of your courses"
         },
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         {
-            "Name": "few",
-            "Email": "qww",
-            "Enquiry": "qww"
+            "name": "fefw",
+            "email": "fewfew",
+            "comment": "wefw"
         },
         {
-            "Name": "d",
-            "Email": "ferfe",
-            "Enquiry": "f"
+            "name": "David Husselholf",
+            "email": "baywatch@beach.com",
+            "comment": "Legendary Series"
         }
     ]
 }
