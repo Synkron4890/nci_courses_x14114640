@@ -53,6 +53,51 @@
      #targetCaoCourses{
        display: none;
      }
+     #targetOnlineEnquiry{
+       display: none;
+     }
+     .button {
+       display: inline-block;
+       background-color: #4d94ff;
+       border-radius: 4px;
+       border: none;
+       color: white;
+       padding: 10px 20px;
+       text-align: center;
+       text-decoration: none;
+       font-size: 13px;
+       -webkit-transition-duration: 0.4s;
+       transition: all 0.4s;
+       cursor: pointer;
+     }
+     .button:hover {
+       background-color: white;
+       color: #4d94ff;
+       border: 1px solid #4d94ff;
+       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+     }
+     .enqButton {
+       background-color: white;
+       float: left;
+       border: 1px solid white;
+       border-radius: 2px;
+       border: none;
+       color: #4d94ff;
+       padding: 10px 20px;
+       text-align: center;
+       font-size: 13px;
+       -webkit-transition-duration: 0.4s;
+       transition: all 0.4s;
+       cursor: pointer;
+     }
+     .enqButton:hover {
+       background-color: #4d94ff;
+       color: white;
+       border: 1px solid white;
+       border-radius: 4px;
+       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+     }
+
     </style>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -80,7 +125,8 @@
            $("#targetCaoCourses").toggle(1000);
         });
         $("#OnlineEnquiry").click(function() {
-           $("#targetOnlineEnquiry").load("OnlineEnquiry.html"); 
+           $("#targetOnlineEnquiry").load("OnlineEnquiry.html");
+           $("#targetOnlineEnquiry").toggle(1000);
         });
       });
     </script>
@@ -120,35 +166,45 @@
                 <article class="targetArticle">
                   <h2>Part Time Courses</h2>
                   <h4>At NCI we run a wide range of courses in the evening to facilitate your lifestyle.</h4>
-                  <button id="PartTimeCourses">View Our Courses</button>
+                  <button class="button" id="PartTimeCourses">View Our Courses</button>
+                  </br>
+                  </br>
                   <div id="targetPartTimeCourses"></div>
                 </article>
                 
                 <article>
                   <h2>Full Time Courses</h2>
                   <h4>NCI have a variety of full-time courses ranging from certificate to degree level.</h4>
-                  <button id="FullTimeCourses">View Our Courses</button>
+                  <button class="button" id="FullTimeCourses">View Our Courses</button>
+                  </br>
+                  </br>
                   <div id="targetFullTimeCourses"></div>
                 </article>
                 
                 <article>
                   <h2>Postgraduate Courses</h2>
                   <h4>At NCI we have a variety of postgraduate courses in the areas of computing, business and psychology.</h4>
-                  <button id="PostgraduateCourses">View Our Courses</button>
+                  <button class="button" id="PostgraduateCourses">View Our Courses</button>
+                  </br>
+                  </br>
                   <div id="targetPostgraduateCourses"></div>
                 </article>
                 
                 <article>
                   <h2>Undergraduate Courses</h2>
                   <h4>At NCI we have a wide range of courses that will help you further your career both part-time and full-time.</h4>
-                  <button id="UndergraduateCourses">View Our Courses</button>
+                  <button class="button" id="UndergraduateCourses">View Our Courses</button>
+                  </br>
+                  </br>
                   <div id="targetUndergraduateCourses"></div>
                 </article>
                 
                 <article>
                   <h2>CAO Courses</h2>
                   <h4>NCI have a wide range of undergraduate courses that will help you to realise your potential.</h4>
-                  <button id="CaoCourses">View Our Courses</button>
+                  <button class="button" id="CaoCourses">View Our Courses</button>
+                  </br>
+                  </br>
                   <div id="targetCaoCourses"></div>
                 </article>
               </section>
@@ -170,13 +226,15 @@
               </div>
               <div class="form-group">
                 <label for="Comment">Comment</label>
-                <input type="text" class="form-control" name="comment" placeholder="Type your comment here">
+                <input id="form" type="text" class="form-control" name="comment" placeholder="Type your comment here">
               </div>
-              <button type="submit" class="btn btn-default">Submit Comment</button>
+              <button type="submit" class="enqButton">Submit Comment</button>           
             </form>
-            <div id="targetOnlineEnquiry">
-              <button id="OnlineEnquiry">Display Comments</button>
-            </div>
+            </br>
+            </br>
+            </br>
+            <button class="enqButton" id="OnlineEnquiry">Display Comments</button>
+            <div id="targetOnlineEnquiry"></div>
           </div>
           </br>
           </br>
