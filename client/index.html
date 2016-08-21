@@ -38,24 +38,46 @@
        width: 1000px;
        border-radius: 20px; 
      }
+     #targetPartTimeCourses{
+       display: none;
+     }
+     #targetFullTimeCourses{
+       display: none;
+     }
+     #targetPostgraduateCourses{
+       display: none;
+     }
+     #targetUndergraduateCourses{
+       display: none;
+     }
+     #targetCaoCourses{
+       display: none;
+     }
     </style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.5.1.min.js"></script>
     <script type="text/javascript">
       $(document).ready (function(){
         $("#PartTimeCourses").click(function(){
           $("#targetPartTimeCourses").load("PartTimeCourses.html");
+          $("#targetPartTimeCourses").toggle(1000);
         });
         $("#FullTimeCourses").click(function(){
           $("#targetFullTimeCourses").load("FullTimeCourses.html");
+          $("#targetFullTimeCourses").toggle(1000);
         });
         $("#PostgraduateCourses").click(function() {
-          $("#targetPostgraduateCourses").load("PostgraduateCourses.html");  
+          $("#targetPostgraduateCourses").load("PostgraduateCourses.html");
+          $("#targetPostgraduateCourses").toggle(1000);
         });
         $("#UndergraduateCourses").click(function() {
            $("#targetUndergraduateCourses").load("UndergraduateCourses.html"); 
+           $("#targetUndergraduateCourses").toggle(1000);
         });
         $("#CaoCourses").click(function() {
-           $("#targetCaoCourses").load("CaoCourses.html"); 
+           $("#targetCaoCourses").load("CaoCourses.html");
+           $("#targetCaoCourses").toggle(1000);
         });
         $("#OnlineEnquiry").click(function() {
            $("#targetOnlineEnquiry").load("OnlineEnquiry.html"); 
@@ -63,6 +85,7 @@
       });
     </script>
   </head>
+  
   <body>
     <div class="jumbotron">
       </br>
@@ -96,48 +119,37 @@
                 </br>
                 <article class="targetArticle">
                   <h2>Part Time Courses</h2>
-                  <p class="col-sm-100%">
-                      <h4>At NCI we run a wide range of courses in the evening to facilitate your lifestyle.</h4>
-                    <div id="targetPartTimeCourses">
-                      <button id="PartTimeCourses">View Our Courses</button>
-                    </div>
-                  </p>
+                  <h4>At NCI we run a wide range of courses in the evening to facilitate your lifestyle.</h4>
+                  <button id="PartTimeCourses">View Our Courses</button>
+                  <div id="targetPartTimeCourses"></div>
                 </article>
+                
                 <article>
                   <h2>Full Time Courses</h2>
-                  <p class="col-sm-100%">
-                    <h4>NCI have a variety of full-time courses ranging from certificate to degree level.</h4>
-                    <div id="targetFullTimeCourses">
-                      <button id="FullTimeCourses">View Our Courses</button>
-                    </div>
-                  </p>
+                  <h4>NCI have a variety of full-time courses ranging from certificate to degree level.</h4>
+                  <button id="FullTimeCourses">View Our Courses</button>
+                  <div id="targetFullTimeCourses"></div>
                 </article>
+                
                 <article>
                   <h2>Postgraduate Courses</h2>
-                  <p class="col-sm-100%">
-                    <h4>At NCI we have a variety of postgraduate courses in the areas of computing, business and psychology.</h4>
-                    <div id="targetPostgraduateCourses">
-                      <button id="PostgraduateCourses">View Our Courses</button>
-                    </div>
-                  </p>
+                  <h4>At NCI we have a variety of postgraduate courses in the areas of computing, business and psychology.</h4>
+                  <button id="PostgraduateCourses">View Our Courses</button>
+                  <div id="targetPostgraduateCourses"></div>
                 </article>
+                
                 <article>
                   <h2>Undergraduate Courses</h2>
-                  <p class="col-sm-100%">
-                    <h4>At NCI we have a wide range of courses that will help you further your career both part-time and full-time.</h4>
-                    <div id="targetUndergraduateCourses">
-                      <button id="UndergraduateCourses">View Our Courses</button>
-                    </div>
-                  </p>
+                  <h4>At NCI we have a wide range of courses that will help you further your career both part-time and full-time.</h4>
+                  <button id="UndergraduateCourses">View Our Courses</button>
+                  <div id="targetUndergraduateCourses"></div>
                 </article>
+                
                 <article>
                   <h2>CAO Courses</h2>
-                  <p class="col-sm-100%">
-                    <h4>NCI have a wide range of undergraduate courses that will help you to realise your potential.</h4>
-                    <div id="targetCaoCourses">
-                      <button id="CaoCourses">View Our Courses</button>
-                    </div>
-                  </p>
+                  <h4>NCI have a wide range of undergraduate courses that will help you to realise your potential.</h4>
+                  <button id="CaoCourses">View Our Courses</button>
+                  <div id="targetCaoCourses"></div>
                 </article>
               </section>
             </div>
