@@ -24,7 +24,11 @@
 						<th>E-Mail</th>
 						<th>Comment</th>
 					</tr>
-					<xsl:for-each select="enquiries/enquiry">
+					<!--<xsl:variable name="count" select="count(enquiries/enquiry)"/>-->
+					<!--<xsl:variable name="latest10" select="number($count) - 10"/>-->
+					<!--<xsl:if test="$latest5 &lt;= position()">-->
+						<xsl:for-each select="enquiries/enquiry [position() > last()-5]">
+							<xsl:sort select="position()" order="descending" data-type="number"/>
 							<tr>
 								<td>
 									<xsl:value-of select="name"/>
@@ -36,7 +40,8 @@
 									<xsl:value-of select="comment"/>
 								</td>								
 							</tr>
-					</xsl:for-each>
+						</xsl:for-each>
+					<!--</xsl:if>-->
 				</table>
 			</body>
 		</html>
