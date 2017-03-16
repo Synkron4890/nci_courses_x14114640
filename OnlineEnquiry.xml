@@ -35,4 +35,19 @@
 		<email></email>
 		<comment></comment>
 	</enquiry>
+	<enquiry>
+		<name>Florin</name>
+		<email>florin.it4890@gmail.com</email>
+		<comment>Hello there</comment>
+	</enquiry>
+	<enquiry>
+		<name></name>
+		<email></email>
+		<comment></comment>
+	</enquiry>
+	<enquiry>
+		<name>fefer</name>
+		<email>fefer</email>
+		<comment>frvr</comment>
+	</enquiry>
 </enquiries>
