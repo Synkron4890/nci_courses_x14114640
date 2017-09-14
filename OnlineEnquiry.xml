@@ -50,4 +50,14 @@
 		<email>fefer</email>
 		<comment>frvr</comment>
 	</enquiry>
+	<enquiry>
+		<name></name>
+		<email></email>
+		<comment></comment>
+	</enquiry>
+	<enquiry>
+		<name></name>
+		<email></email>
+		<comment></comment>
+	</enquiry>
 </enquiries>
