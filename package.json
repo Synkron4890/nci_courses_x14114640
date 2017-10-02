@@ -13,7 +13,8 @@
     "fs": "0.0.2",
     "js2xmlparser": "^1.0.0",
     "jstoxml": "^0.2.3",
-    "socket.io": "~0.9.14",
-    "node_xslt": "~0.1.9"
+    "newrelic": "^2.2.2",
+    "node_xslt": "~0.1.9",
+    "socket.io": "~0.9.14"
   }
 }
