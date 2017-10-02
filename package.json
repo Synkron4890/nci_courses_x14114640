@@ -1,26 +1,20 @@
-{
-  "name": "nci_courses_x14114640",
-  "version": "1.0.0",
-  "description": "",
+
+  "name": "chat-example",
+  "version": "0.0.0",
+  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
   "main": "server.js",
-  "dependencies": {
-    "body-parser": "^1.14.1",
-    "fs": "0.0.2",
-    "js2xmlparser": "^1.0.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
   "repository": "",
-  "author": "Florin Ioan Taranu - Student ID: x14114640",
-  "type": "git",
-  "url": "git+https://github.com/Synkron4890/nci_courses_x14114640"
+  "author": "Mostafa Eweda <mo.eweda@gmail.com>",
   "dependencies": {
     "async": "~0.2.8",
-    "express": "~3.2.4",
-    "socket.io": "~0.9.14"
+    "body-parser": "^1.14.1",
+    "easyxml": "^1.0.0",
+    "express": "^3.2.6",
+    "fs": "0.0.2",
+    "js2xmlparser": "^1.0.0",
+    "jstoxml": "^0.2.3",
+    "socket.io": "~0.9.14",
+    "node_xslt": "~0.1.9"
   }
-  "homepage": "https://github.com/Synkron4890/nci_courses_x14114640#readme"
 }
+
