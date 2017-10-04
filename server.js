@@ -1,3 +1,4 @@
+var newrelic = require('newrelic');
 var http = require('http');
 var path = require('path');
 var express = require('express');
@@ -5,7 +6,6 @@ var bodyParser = require('body-parser');
 var fs = require('fs');
 var js2xmlparser = require("js2xmlparser");
 var xslt = require('node_xslt');
-var newrelic = require('newrelic');
 
 var router = express();
 var server = http.createServer(router);
